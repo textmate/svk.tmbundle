@@ -18,6 +18,20 @@ END
 	<string>Update to Newest</string>
 	<key>output</key>
 	<string>showAsTooltip</string>
+    <key>requiredCommands</key>
+    <array>
+    	<dict>
+    		<key>command</key>
+    		<string>svk</string>
+    		<key>locations</key>
+    		<array>
+    			<string>/opt/local/bin/svk</string>
+    			<string>/usr/local/bin/svk</string>
+    		</array>
+    		<key>variable</key>
+    		<string>TM_SVK</string>
+    	</dict>
+    </array>
 	<key>uuid</key>
 	<string>D79E0650-C374-11D9-8A81-000A95BCAFA8</string>
 </dict>

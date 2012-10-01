@@ -23,6 +23,20 @@ fi</string>
 	<string>Info</string>
 	<key>output</key>
 	<string>showAsHTML</string>
+    <key>requiredCommands</key>
+    <array>
+    	<dict>
+    		<key>command</key>
+    		<string>svk</string>
+    		<key>locations</key>
+    		<array>
+    			<string>/opt/local/bin/svk</string>
+    			<string>/usr/local/bin/svk</string>
+    		</array>
+    		<key>variable</key>
+    		<string>TM_SVK</string>
+    	</dict>
+    </array>
 	<key>uuid</key>
 	<string>70BCF12B-C35D-11D9-AB2C-000A95BCAFA8</string>
 </dict>

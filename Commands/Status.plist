@@ -18,6 +18,20 @@
 	<string>Status</string>
 	<key>output</key>
 	<string>showAsHTML</string>
+    <key>requiredCommands</key>
+    <array>
+    	<dict>
+    		<key>command</key>
+    		<string>svk</string>
+    		<key>locations</key>
+    		<array>
+    			<string>/opt/local/bin/svk</string>
+    			<string>/usr/local/bin/svk</string>
+    		</array>
+    		<key>variable</key>
+    		<string>TM_SVK</string>
+    	</dict>
+    </array>
 	<key>uuid</key>
 	<string>C17472A0-C36B-11D9-954B-000A95BCAFA8</string>
 </dict>
