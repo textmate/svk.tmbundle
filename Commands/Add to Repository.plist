@@ -8,7 +8,7 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-ruby -r "$TM_SUPPORT_PATH/lib/shelltokenize.rb" &lt;&lt;END
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -r "$TM_SUPPORT_PATH/lib/shelltokenize.rb" &lt;&lt;END
 	svk = ENV['TM_SVK'] || "svk"
 	puts %x{#{svk} add #{TextMate.selected_paths_for_shell}}
 END</string>
