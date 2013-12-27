@@ -9,7 +9,7 @@
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 "${TM_SVK:=svk}" blame "$TM_FILEPATH" \
-2&gt;&amp;1| ruby -- "${TM_BUNDLE_SUPPORT}/format_blame.rb"</string>
+2&gt;&amp;1| /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "${TM_BUNDLE_SUPPORT}/format_blame.rb"</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
