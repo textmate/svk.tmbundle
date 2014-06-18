@@ -15,10 +15,10 @@ TM_SVK_LOG_RANGE="${TM_SVK_LOG_RANGE:=BASE:1}"
 
 if [[ -z $TM_SELECTED_FILES ]]; then
    "$TM_SVK" log -vr"$TM_SVK_LOG_RANGE" "$TM_FILEPATH" \
-   2&gt;&amp;1| /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "$FORMAT_LOG"
+   2&gt;&amp;1| ruby18 -- "$FORMAT_LOG"
 else
    eval "$TM_SVK" log -vr"$TM_SVK_LOG_RANGE" $TM_SELECTED_FILES \
-   2&gt;&amp;1| /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "$FORMAT_LOG"
+   2&gt;&amp;1| ruby18 -- "$FORMAT_LOG"
 fi</string>
 	<key>input</key>
 	<string>none</string>

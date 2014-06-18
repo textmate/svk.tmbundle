@@ -14,7 +14,7 @@ export CommitWindow
 TM_SVK="${TM_SVK:=svk}"
 export TM_SVK
 
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "${TM_BUNDLE_SUPPORT}/svk_commit.rb"
+ruby18 -- "${TM_BUNDLE_SUPPORT}/svk_commit.rb"
 </string>
 	<key>input</key>
 	<string>none</string>

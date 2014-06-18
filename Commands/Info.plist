@@ -10,10 +10,10 @@ FORMAT_INFO="${TM_BUNDLE_SUPPORT}/format_info.rb"
 
 if [[ -z $TM_SELECTED_FILES ]]; then
    "$TM_SVK" info "$TM_FILEPATH" \
-   2&gt;&amp;1| /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "$FORMAT_INFO"
+   2&gt;&amp;1| ruby18 -- "$FORMAT_INFO"
 else
    eval "$TM_SVK" info $TM_SELECTED_FILES \
-   2&gt;&amp;1| /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "$FORMAT_INFO"
+   2&gt;&amp;1| ruby18 -- "$FORMAT_INFO"
 fi</string>
 	<key>input</key>
 	<string>none</string>

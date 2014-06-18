@@ -8,7 +8,7 @@
 	<string>export WorkPath="$TM_DIRECTORY"
 
 # show it..
-"${TM_SVK:=svk}" status "$WorkPath" 2&gt;&amp;1| /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -- "${TM_BUNDLE_SUPPORT}/format_status.rb"
+"${TM_SVK:=svk}" status "$WorkPath" 2&gt;&amp;1| ruby18 -- "${TM_BUNDLE_SUPPORT}/format_status.rb"
 </string>
 	<key>input</key>
 	<string>none</string>
